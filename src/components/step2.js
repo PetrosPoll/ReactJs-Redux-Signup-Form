@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import PostAddIcon from '@material-ui/icons/PostAdd';
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
@@ -46,7 +46,16 @@ const Step2 = () => {
     const dispatch = useDispatch();
     const nextOperations = useSelector((state) =>state.formData.operations.update);
     const formData = useSelector((state) => state.formData.formData);
-    const [birthday, setBirthday] = useState("");
+    const [birthday, setBirthday] = useState(new Date());
+
+
+    useEffect(() => {
+
+        
+       if(formData.dateBirth) 
+       setBirthday(formData.dateBirth)
+
+    },[birthday, formData.dateBirth]);
 
 
     // Handler function for email input
@@ -110,6 +119,7 @@ const Step2 = () => {
                     <TextField className={classes.textField} label="email" defaultValue={formData?.email} variant="outlined"  type="text" name="Email" onChange={emailChangeHandler} ></TextField><br />
                     <LocalizationProvider dateAdapter={AdapterDateFns}>
                         <DatePicker
+                            AutoClose
                             label="Birthday date"
                             value={birthday}
                             onChange={birthdayHandleChange}
