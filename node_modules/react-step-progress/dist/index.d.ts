@@ -1,0 +1,4 @@
+/// <reference types="react" />
+import { StepProgressProps } from './models';
+declare function StepProgressBar(props: StepProgressProps): JSX.Element;
+export default StepProgressBar;
