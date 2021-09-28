@@ -1,0 +1,63 @@
+
+/* MEDIA QUERIES FOR RESPONSIVE */
+
+  @media only screen and (max-width: 414px) {
+    .MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-formControl {
+      width: 235px !important;
+    }
+    #paperStyle{
+      margin-top: 45px;
+    }
+    .react-tel-input .form-control{
+      width: 235px !important;
+    }
+
+    .MuiTypography-root.MuiTypography-h5.css-ag7rrr-MuiTypography-root{
+      margin-right: 60px !important;
+    }
+  }
+
+
+  @media only screen and (max-width: 375px) {
+    .MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-formControl {
+      width: 198px !important;
+    }
+
+    .react-tel-input .form-control{
+      width: 198px !important;
+    }
+
+    .MuiTypography-root.MuiTypography-h5.css-ag7rrr-MuiTypography-root{
+      margin-right: 85px !important;
+    }
+
+  }
+
+  @media only screen and (max-width: 360px) {
+    .MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-formControl {
+      width: 185px !important;
+    }
+
+    .MuiTypography-root.MuiTypography-h5.css-ag7rrr-MuiTypography-root{
+      margin-right: 111px !important;
+    }
+
+    .react-tel-input .form-control{
+      width: 185px !important;
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    .MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-formControl {
+      width: 145px !important;
+    }
+
+    .MuiTypography-root.MuiTypography-h5.css-ag7rrr-MuiTypography-root{
+      margin-right: 150px !important;
+    }
+
+    .react-tel-input .form-control{
+      width: 145px !important;
+    }
+  }
+ 
