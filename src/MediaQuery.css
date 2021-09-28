@@ -1,6 +1,13 @@
 
 /* MEDIA QUERIES FOR RESPONSIVE */
 
+@-moz-document url-prefix() {
+  .react-tel-input {
+    margin-top: 20px;
+  }
+}
+
+
   @media only screen and (max-width: 414px) {
     .MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-formControl {
       width: 235px !important;
